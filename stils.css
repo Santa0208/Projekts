@@ -1,19 +1,157 @@
-body {
-  background-color: #69bdda;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #e7d2df;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #d4636f;
+  margin-top: 0px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  top: 0;
+  position: fixed;
+  width: calc(100% - 200px);
+}
+
+.topnav a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  color: #f2f2f2f2;
+  text-decoration: none;
+  text-align: center;
+}
+
+.topnav a.active {
+  background-color: #417679;
+  color: white;
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  border: 1px;
+  border-style: dotted;
+  border-color: red;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #952572;
+  color: white;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  background-color: #d4636f;
+  top:0;
+  left:0;
+}
+
+.sidebar a:hover {
+  background-color: #952572;
+  color: white;
+}
+
+main {
+  margin-left: 210px;
+  margin-right: 25px;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+footer {
+  margin-left: 200px;
+  background-color: #d4636f;
+  padding-left: 25px;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 200px);
 }
 
 p {
   text-align:center;
   color:red;
+  font-size: 22px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p.cits {
+  text-align:center;
+  color:white;
 }
 
 h1 {
-  color:blue;
+  color: black;
   font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#saturs img {
+  border-radius: 100px;
+  display: inline-block;
+  padding: 50px;
+  
+}
+
+#saturs img:hover {
+  transform: scale(1.5) rotate(20deg); 
+  transition-duration: 2s;
+}
+
+marquee {
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 35px;
+}
+
+.myDiv {
+  flex: 1;
+  border: 1px solid red;
+  background-color: #417679;    
+  text-align: center;
+  width: 20%;
+}
+
+div h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+div p {
+  color: black;
 }
 
 table {
-  background-color: RGB(100 100 100);
+  /*background-color: #e7d2df;*/
   color: red;
   border: solid 1px;
   border-color: black;
@@ -24,11 +162,86 @@ table {
 }
 
 th {
-  color: black;
-  background-color: #aeaf8e;
+  color: white;
+  background-color: #952572;
+  font-size: 20px;
 }
 
 td {
-  background-color: #ffe803;
-  color: green;
+  /*background-color: #ffe803;
+  color: green;*/
+  color: black;
+  font-size: 18px;
 }
+
+#tabula {
+  background-color: #efb7b2;
+  border-radius: 38px;
+  box-shadow: 10px 10px #952572;
+  padding: 20px;
+}
+
+#tabula ul {
+  list-style-type: square;
+  padding: 20px;
+}
+
+#tabula ol {
+  padding-top: 40px;
+  color: #417679;
+  font-size: 18px;
+}
+
+#tabula li.cits {
+  color: white;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+#tabula a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#saturs {
+  background-color: #efb7b2;
+  border-radius: 18px;
+  box-shadow: 10px 10px #952572;
+}
+
+#canva {
+  background-color: #efb7b2;
+  border-radius: 38px;
+  box-shadow: 10px 10px #952572;
+  padding: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+form {
+  padding-left: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.login {
+  font-size: 20px;
+}
+
+.submit_button {
+  background-color: #04AA6D;
+  font-size: 22px;
+  border-radius: 12px;
+  color: White;
+  border: none;
+  padding: 10px;
+}
+
+
+
+
