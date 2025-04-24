@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="stils.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -39,10 +40,34 @@
       <a href="#canva">Canva</a>
     </aside>
     <main>
+      <section id="aprekins">
+        <label for="vārds">Vārds</label>
+        <input cass="text" type="text" id="vards" name="vards" /><br /><br />
+        <label for="x">Ievadi X vērtību</label>
+        <input type="number" id="x" /><br />
+        <label for="y">Ievadi Y vērtību</label>
+        <input type="number" id="y" /><br /><br />
+        <button onclick="saskaitit()" class="btn btn-warning">Summa</button>
+        <button onclick="atnemt()" class="btn btn-warning">Starpība</button>
+        <button onclick="reizinat()" class="btn btn-warning">Reizinājums</button>
+        <button onclick="dalit()" class="btn btn-warning">Dalījums</button>
+        <p id="rezultats">Šeit būs rezultāts</p>
+      </section>
       <section id="saturs">
-        <h1>Sveika pasaule!</h1>
-        <p>Šis ir mans pirmais HTML dokuments</p>
-        <p class="cits">Šis ir mans otrais HTML dokuments</p>
+        <h1>Hello World!</h1>
+        <p>
+          A "Hello, World!" program is usually a simple computer program that
+          emits (or displays) to the screen (often the console) a message
+          similar to "Hello, World!".
+        </p>
+        <p class="cits">
+          A small piece of code in most general-purpose programming languages,
+          this program is used to illustrate a language's basic syntax. Such a
+          program is often the first written by a student of a new programming
+          language,[1] but it can also be used as a sanity check to ensure that
+          the computer software intended to compile or run source code is
+          correctly installed, and that its operator understands how to use it.
+        </p>
         <img
           src="https://cdn.glitch.global/83edb286-2a81-4e4a-9075-0d4d4dad00f0/cartoon.jpg?v=1744522541090"
           width="300px"
@@ -63,7 +88,14 @@
           width="300px"
           height="400px"
         />
-        <marquee>Šis ir slīdošais teksts</marquee>
+        <marquee
+          >The program above prints hello, world! on the terminal, including a
+          newline character. The phrase is divided into multiple variables
+          because in B a character constant is limited to four ASCII characters.
+          The previous example in the tutorial printed hi! on the terminal, and
+          the phrase hello, world! was introduced as a slightly longer greeting
+          that required several character constants for its expression.</marquee
+        >
       </section>
       <div class="container">
         <div class="myDiv">
@@ -123,13 +155,12 @@
           <li class="cits">Ceturtais elements</li>
         </ul>
         <p>Tabulas noslēguma teksts</p>
-        <a
-          href="https://4kwallpapers.com/movies/tom-jerry-cartoon-12447.html"
+        <a href="https://4kwallpapers.com/movies/tom-jerry-cartoon-12447.html"
           >Ej uz citu lapu</a
         ><br /><br />
       </section>
       <section id="canva">
-        <canvas id="zimejums" width="500" height="400"></canvas>
+        <canvas id="zimejums" width="800" height="400"></canvas>
         <button onclick="taisnsturis()" class="btn btn-success">
           Taisnsturis
         </button>
