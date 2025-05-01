@@ -21,17 +21,28 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patua+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="stils.css" />
-    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stils.css') }}"
+    />
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </head>
   <body>
     <header>
       <nav class="topnav">
         <a href="/" class="active">Sākums</a>
-        <a href="par_mums.html">Par mums</a>
-        <a href="kontakti.html">Kontakti</a>
-        <a href="aptauja.html">Aptaujas</a>
-        <a href="pamati_sintakse.html">Pamati sitakse</a>
+        <a href="par_mums" onclick="atjaunotIetvaru(this); return false;"
+          >Par mums</a
+        >
+        <a href="kontakti" onclick="atjaunotIetvaru(this); return false;"
+          >Kontakti</a
+        >
+        <a href="aptauja" onclick="atjaunotIetvaru(this); return false;"
+          >Aptaujas</a
+        >
+        <a href="pamati_sintakse" onclick="atjaunotIetvaru(this); return false;"
+          >Pamati sintakse</a
+        >
       </nav>
     </header>
     <aside class="sidebar">
@@ -39,8 +50,9 @@
       <a href="#tabula">Tabula</a>
       <a href="#canva">Canva</a>
     </aside>
-    <main>
+    <main id="Lapas_saturs">
       <section id="aprekins">
+        <h2>Kalkutators</h2>
         <label for="vārds">Vārds</label>
         <input cass="text" type="text" id="vards" name="vards" /><br /><br />
         <label for="x">Ievadi X vērtību</label>
@@ -49,10 +61,28 @@
         <input type="number" id="y" /><br /><br />
         <button onclick="saskaitit()" class="btn btn-warning">Summa</button>
         <button onclick="atnemt()" class="btn btn-warning">Starpība</button>
-        <button onclick="reizinat()" class="btn btn-warning">Reizinājums</button>
-        <button onclick="dalit()" class="btn btn-warning">Dalījums</button>
+        <button onclick="reizinat()" class="btn btn-warning">
+          Reizinājums
+        </button>
+        <button onclick="dalit()" class="btn btn-warning">Dalījums</button
+        ><br /><br />
         <p id="rezultats">Šeit būs rezultāts</p>
       </section>
+      <section id="konventors">
+        <h2>Konventors</h2>
+        <br />
+        <p>Pārveido no collām uz centimetriem</p>
+        <div class="collas">
+          <p>Ievadiet vērtību collās:</p>
+          <input type="number" id="inchesInput" /><br /><br />
+          <button onclick="convertToCm()" class="btn btn-warning">
+            Pārveidot
+          </button><br><br>
+          <p id="result">Centimetros tas ir:</p>
+        </div>
+        <br />
+      </section>
+      <br /><br />
       <section id="saturs">
         <h1>Hello World!</h1>
         <p>
