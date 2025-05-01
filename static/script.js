@@ -126,6 +126,27 @@ function convertToCm() {
   result.textContent = `centimetros tas ir ${cm.toFixed(2)}`;
 }
 
+function downloadFile() {
+  let datnesNosaukums = "rezultats.txt";
+  let rezultats = document.getElementById("result").textContent;
+
+  if (!rezultats) {
+    alert("Lūdzu, vispirms konvertē vērtību!");
+    return;
+  }
+
+  let blob = new Blob([rezultats], { type: "text/plain" });
+  let saite = document.createElement("a");
+  saite.href = URL.createObjectURL(blob);
+  saite.download = datnesNosaukums;
+
+  saite.style.display = "none";
+  document.body.appendChild(saite);
+  saite.click();
+  document.body.removeChild(saite);
+  URL.revokeObjectURL(saite.href);
+}
+
 function zimetuzcanva() {}
 
 function taisnsturis() {
