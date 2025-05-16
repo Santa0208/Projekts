@@ -130,7 +130,7 @@ function downloadFile() {
   let datnesNosaukums = "rezultats.txt";
   let rezultats = document.getElementById("result").textContent;
 
-  if (!rezultats) {
+  if (rezultats) {
     alert("Lūdzu, vispirms konvertē vērtību!");
     return;
   }
