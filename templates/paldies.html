@@ -1,8 +1,8 @@
-!DOCTYPE html
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Panelis</title>
+     <meta charset="UTF-8" />
+    <title>Paldies</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,29 +28,8 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </head>
   <body>
-    <h1>Administrācijas panelis</h1>
-    <a href="{{url_for('izlogoties')}}">Izlogoties</a>
-    <h2>Respondentu atbildes</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Vārds</th>
-          <th>Dzimums</th>
-          <th>Hobiji</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for lietotajs in lietotaji %}
-        <tr>
-          <td>{{ lietotajs[0] }}</td>
-          <td>{{ lietotajs[1] }}</td>
-          <td>{{ lietotajs[2] }}</td>
-          <td>{{ lietotajs[3] }}</td>
-         </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <h1>Paldies! Dati ir saņemti.</h1>
     <a href="/aptauja">Atgriezties</a>
   </body>
 </html>
+

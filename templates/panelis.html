@@ -1,4 +1,4 @@
-!DOCTYPE html
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -29,14 +29,29 @@
   </head>
   <body>
     <h1>Administrācijas panelis</h1>
-    <form action="{{ url_for('pieteikties') }}" method="POST">
-      <label for="lietotajvards">Lietotājvārds</label>
-      <input type="text" id="lietotajvards" name="lietojvards" required>
-      <br><br>
-      <label for="parole">Parole</label>
-      <input type="password" id="parole" name="parole" required>
-      <br><br>
-      <button type="submit">Pieteikties</button>
-    </form>
+    <a href="{{url_for('izlogoties')}}">Izlogoties</a>
+    <h2>Respondentu atbildes</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Vārds</th>
+          <th>Dzimums</th>
+          <th>Hobiji</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ lietotaji }}
+        {% for lietotajs in lietotaji %}
+        <tr>
+          <td>{{ lietotajs[0] }}</td>
+          <td>{{ lietotajs[1] }}</td>
+          <td>{{ lietotajs[2] }}</td>
+          <td>{{ lietotajs[3] }}</td>
+         </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="/aptauja">Atgriezties</a>
   </body>
 </html>
