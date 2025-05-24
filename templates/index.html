@@ -43,47 +43,19 @@
         <a href="pamati_sintakse" onclick="atjaunotIetvaru(this); return false;"
           >Pamati sintakse</a
         >
+        <a href="patstavigie_darbi" onclick="atjaunotIetvaru(this); return false;"
+          >Patstāvīgie darbi</a
+        >
       </nav>
     </header>
     <aside class="sidebar">
       <a href="#saturs">Saturs</a>
+      <a href="#aprekins">Kalkulators</a>
+      <a href="#konvertors">Konvertors</a>
       <a href="#tabula">Tabula</a>
       <a href="#canva">Canva</a>
     </aside>
     <main id="Lapas_saturs">
-      <section id="aprekins">
-        <h2>Kalkutators</h2>
-        <label for="vārds">Vārds</label>
-        <input cass="text" type="text" id="vards" name="vards" /><br /><br />
-        <label for="x">Ievadi X vērtību</label>
-        <input type="number" id="x" /><br />
-        <label for="y">Ievadi Y vērtību</label>
-        <input type="number" id="y" /><br /><br />
-        <button onclick="saskaitit()" class="btn btn-warning">Summa</button>
-        <button onclick="atnemt()" class="btn btn-warning">Starpība</button>
-        <button onclick="reizinat()" class="btn btn-warning">
-          Reizinājums
-        </button>
-        <button onclick="dalit()" class="btn btn-warning">Dalījums</button
-        ><br /><br />
-        <p id="rezultats">Šeit būs rezultāts</p>
-      </section>
-      <section id="konventors">
-        <h2>Konventors</h2>
-        <br />
-        <p>Pārveido no collām uz centimetriem</p>
-        <div class="collas">
-          <p>Ievadiet vērtību collās:</p>
-          <input type="number" id="inchesInput" /><br /><br />
-          <button onclick="convertToCm()" class="btn btn-warning">
-            Pārveidot
-          </button><br><br>
-          <p id="result">Centimetros tas ir:</p>
-          <button onclick="downloadFile()" class="btn btn-success">Lejupielādēt</button>
-        </div>
-        <br />
-      </section>
-      <br /><br />
       <section id="saturs">
         <h1>Hello World!</h1>
         <p>
@@ -128,6 +100,43 @@
           that required several character constants for its expression.</marquee
         >
       </section>
+      <br /><br />
+      <section id="aprekins">
+        <h2>Kalkutators</h2>
+        <label for="vārds">Vārds</label>
+        <input cass="text" type="text" id="vards" name="vards" /><br /><br />
+        <label for="x">Ievadi X vērtību</label>
+        <input type="number" id="x" /><br />
+        <label for="y">Ievadi Y vērtību</label>
+        <input type="number" id="y" /><br /><br />
+        <button onclick="saskaitit()" class="btn btn-warning">Summa</button>
+        <button onclick="atnemt()" class="btn btn-warning">Starpība</button>
+        <button onclick="reizinat()" class="btn btn-warning">
+          Reizinājums
+        </button>
+        <button onclick="dalit()" class="btn btn-warning">Dalījums</button
+        ><br /><br />
+        <p id="rezultats">Šeit būs rezultāts</p>
+      </section>
+      <br><br>
+      <section id="konvertors">
+        <h2>Konvertors</h2>
+        <br />
+        <p>Pārveido no collām uz centimetriem</p>
+        <div class="collas">
+          <p>Ievadiet vērtību collās:</p>
+          <input type="number" id="inchesInput" /><br /><br />
+          <button onclick="convertToCm()" class="btn btn-warning">
+            Pārveidot</button
+          ><br /><br />
+          <p id="result">Centimetros tas ir:</p>
+          <button onclick="downloadFile()" class="btn btn-success">
+            Lejupielādēt
+          </button>
+        </div>
+        <br />
+      </section>
+      <br /><br />
       <div class="container">
         <div class="myDiv">
           <h2>1. kolonna</h2>
@@ -143,6 +152,9 @@
         </div>
       </div>
       <section id="tabula">
+        <h2>
+          Tabula
+        </h2>
         <table border="1">
           <tr>
             <th>Pirmais</th>

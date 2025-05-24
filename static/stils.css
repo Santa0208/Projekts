@@ -221,15 +221,17 @@ tr:nth-child(even) {
   border-radius: 18px;
   box-shadow: 10px 10px #952572;
   text-align: center;
+  padding: 10px;
 }
 
-#konventors {
+#konvertors {
   background-color: #efb7b2;
   border-radius: 18px;
   box-shadow: 10px 10px #952572;
+  padding: 10px;
 }
 
-#konventors .collas {
+#konvertors .collas {
   text-align: center;
 }
 
@@ -237,7 +239,7 @@ tr:nth-child(even) {
   background-color: #efb7b2;
   border-radius: 18px;
   box-shadow: 10px 10px #952572;
-}
+ }
 
 #canva {
   background-color: #efb7b2;
