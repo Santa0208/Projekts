@@ -28,9 +28,10 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </head>
   <body>
+    <h1>Administrācijas panelis</h1>
+    <br /><br />
+    <a href="{{url_for('izlogoties')}}">Izlogoties</a>
     <div class="panelis">
-      <h1>Administrācijas panelis</h1><br><br>
-      <a href="{{url_for('izlogoties')}}">Izlogoties</a>
       <h2>Respondentu atbildes</h2>
       <table border="1">
         <thead>
@@ -59,8 +60,9 @@
           </tr>
           {% endfor %}
         </tbody>
-      </table><br><br>
-      <a href="/aptauja">Atgriezties</a>
+      </table>
+      <br /><br />
     </div>
+    <a href="/aptauja">Atgriezties</a><br /><br />
   </body>
 </html>
