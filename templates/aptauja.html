@@ -1,3 +1,9 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+  crossorigin="anonymous"
+/>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -6,28 +12,42 @@
 />
 <link rel="stylesheet" href="{{ url_for('static', filename='stils.css') }}" />
 <script src="{{ url_for('static', filename='script.js') }}"></script>
-<h1>Aptaujas anketa</h1>
-<form action="{{ url_for('iesniegt') }}" method="post">
-  <label for="vards">Vārds</label>
-  <input type="text" id="vards" name="vards" required />
-  <br /><br />
-  <label>Dzimums</label><br />
-  <input type="radio" id="virietis" name="dzimums" value="virietis" required />
-  <label for="virietis">Vīrietis</label>
-  <input type="radio" id="sieviete" name="dzimums" value="sieviete" required />
-  <label for="sieviete">Sieviete</label>
-  <input type="radio" id="cits" name="dzimums" value="cits" required />
-  <label for="cits">Nevēlos norādīt</label><br><br>
-  <label>Hobiji</label><br>
-  <input type="checkbox" id="hobijs1" name="hobiji" value="Lasisana">
-  <label for="hobijs1">Lasīšana</label>
-  <input type="checkbox" id="hobijs2" name="hobiji" value="Mūzika">
-  <label for="hobijs2">Mūzika</label>
-  <input type="checkbox" id="hobijs3" name="hobiji" value="Zvejošana">
-  <label for="hobijs3">Zvejošana</label>
-  <input type="checkbox" id="hobijs4" name="hobiji" value="Sports">
-  <label for="hobijs4">Sports</label>
-  <input type="checkbox" id="hobijs5" name="hobiji" value="gatavot_est">
-  <label for="hobijs5">Gatavot ēst</label><br><br>
-  <button type="submit">Iesniegt</button>
-</form>
+<div class="aptaujas_anketa">
+  <h1>Aptaujas anketa</h1>
+  <form action="{{ url_for('iesniegt') }}" method="post">
+    <label for="vards">Vārds</label>
+    <input type="text" id="vards" name="vards" required />
+    <br /><br />
+    <label>Dzimums</label><br />
+    <input
+      type="radio"
+      id="virietis"
+      name="dzimums"
+      value="virietis"
+      required
+    />
+    <label for="virietis">Vīrietis</label>
+    <input
+      type="radio"
+      id="sieviete"
+      name="dzimums"
+      value="sieviete"
+      required
+    />
+    <label for="sieviete">Sieviete</label>
+    <input type="radio" id="cits" name="dzimums" value="cits" required />
+    <label for="cits">Nevēlos norādīt</label><br /><br />
+    <label>Hobiji</label><br />
+    <input type="checkbox" id="hobijs1" name="hobiji" value="Lasisana" />
+    <label for="hobijs1">Lasīšana</label>
+    <input type="checkbox" id="hobijs2" name="hobiji" value="Mūzika" />
+    <label for="hobijs2">Mūzika</label>
+    <input type="checkbox" id="hobijs3" name="hobiji" value="Zvejošana" />
+    <label for="hobijs3">Zvejošana</label>
+    <input type="checkbox" id="hobijs4" name="hobiji" value="Sports" />
+    <label for="hobijs4">Sports</label>
+    <input type="checkbox" id="hobijs5" name="hobiji" value="gatavot_est" />
+    <label for="hobijs5">Gatavot ēst</label><br /><br />
+    <button type="submit" class="btn btn-warning">Iesniegt</button>
+  </form>
+</div>

@@ -1,10 +1,29 @@
 {% extends "pamati_sintakse.html" %}
 
 {% block content %}
-<h1>Mainīgie</h1>
-<pre>
-vards = {{vards}}
-vecums = {{vecums}}
-skaitlis1 + skaitlis2 = {{summa}}
-</pre>
+<div class="container my-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-warning text-black text-center">
+      <h1 class="h4 mb-0">Mainīgie</h1>
+    </div>
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <tbody>
+          <tr>
+            <th>Vārds</th>
+            <td>{{ vards }}</td>
+          </tr>
+          <tr>
+            <th>Vecums</th>
+            <td>{{ vecums }}</td>
+          </tr>
+          <tr>
+            <th>Skaitlis 1 + Skaitlis 2</th>
+            <td>{{ summa }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 {% endblock %}

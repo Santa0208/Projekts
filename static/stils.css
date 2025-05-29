@@ -282,5 +282,87 @@ form {
   height: 100%;
 }
 
+.kontakti {
+  color: black;
+  background-color: #efb7b2;
+  border-radius: 18px;
+  box-shadow: 10px 10px #952572;
+  padding: 5%;
+  margin: 3%;
+}
 
+.kontakti p {
+  color: red;
+}
 
+.par_mums {
+  background-color: #efb7b2;
+  border-radius: 18px;
+  box-shadow: 10px 10px #952572;
+  padding: 5%;
+  margin: 3%;
+}
+
+.par_mums p {
+  color: red;
+}
+
+h4 {
+  color: #417679;
+}
+
+.raksti_mums {
+  background-color: #efb7b2;
+  border-radius: 18px;
+  box-shadow: 10px 10px #952572;
+  padding: 5%;
+  margin: 3%;
+}
+
+.aptaujas_anketa {
+  background-color: #efb7b2;
+  border-radius: 18px;
+  box-shadow: 10px 10px #952572;
+  padding: 5%;
+  margin: 3%;
+}
+
+.sintakse {
+  background-color: #efb7b2;
+  border-radius: 18px;
+  box-shadow: 10px 10px #952572;
+  padding: 5%;
+  margin: 3%;
+}
+
+.panelis {
+  background-color: #efb7b2;
+  border-radius: 18px;
+  box-shadow: 10px 10px #952572;
+  padding: 5%;
+  margin: 3%;
+}
+
+.panelis h2 {
+  color: #417679;
+}
+
+.paldies {
+  background-color: #efb7b2;
+  border-radius: 18px;
+  box-shadow: 10px 10px #952572;
+  padding: 5%;
+  margin: 3%;
+}
+
+.programma {
+  color: #417679;
+}
+
+.admin {
+  background-color: #efb7b2;
+  border-radius: 18px;
+  box-shadow: 10px 10px #952572;
+  padding: 5%;
+  margin: 3%;
+}

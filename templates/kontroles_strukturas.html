@@ -1,10 +1,29 @@
 {% extends "pamati_sintakse.html" %}
 
 {% block content %}
-<h1>Kontroles struktūras</h1>
-<pre>
-IF rezultats = {{rezultats}}
-FOR cikls rezultāts = {{for_cikls_rezultats}}
-WHILE cikls rezultāts = {{while_cikls_rezultats}}
-</pre>
+<div class="container my-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-warning text-dark text-center">
+      <h1 class="h4 mb-0">Kontroles struktūras</h1>
+    </div>
+    <div class="card-body">
+      <table class="table table-bordered table-hover">
+        <tbody>
+          <tr>
+            <th>IF rezultāts</th>
+            <td>{{ rezultats }}</td>
+          </tr>
+          <tr>
+            <th>FOR cikla rezultāts</th>
+            <td>{{ for_cikls_rezultats }}</td>
+          </tr>
+          <tr>
+            <th>WHILE cikla rezultāts</th>
+            <td>{{ while_cikls_rezultats }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 {% endblock %}

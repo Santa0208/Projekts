@@ -1,8 +1,15 @@
 {% extends "pamati_sintakse.html" %}
 
 {% block content %}
-<h1>Sveika pasaule!!!!! It's works.</h1>
-<pre>
-print("Sveika pasaule, neticami darbojas!")
-</pre>
+<div class="container my-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-warning text-black text-center">
+      <h1 class="h4 mb-0">Sveika, pasaule!</h1>
+      <small>It's working perfectly!</small>
+    </div>
+    <div class="card-body">
+      <pre class="bg-light p-3 rounded border">print("Sveika pasaule, neticami – darbojas!")</pre>
+    </div>
+  </div>
+</div>
 {% endblock %}

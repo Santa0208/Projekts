@@ -1,13 +1,41 @@
 {% extends "pamati_sintakse.html" %}
 
 {% block content %}
-<h1>Operatori</h1>
-<pre>
-summa = {{summa}}
-starpība = {{starpiba}}
-reizinājums = {{reizinajums}}
-dalījums = {{dalijums}}
-atlikums = {{atlikums}}
-vienāds = {{vienads}}
-</pre>
+<div class="container my-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-warning text-black text-center">
+      <h1 class="h4 mb-0">Operatori</h1>
+    </div>
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <tbody>
+          <tr>
+            <th>Summa</th>
+            <td>{{ summa }}</td>
+          </tr>
+          <tr>
+            <th>Starpība</th>
+            <td>{{ starpiba }}</td>
+          </tr>
+          <tr>
+            <th>Reizinājums</th>
+            <td>{{ reizinajums }}</td>
+          </tr>
+          <tr>
+            <th>Dalījums</th>
+            <td>{{ dalijums }}</td>
+          </tr>
+          <tr>
+            <th>Atlikums</th>
+            <td>{{ atlikums }}</td>
+          </tr>
+          <tr>
+            <th>Vai vienādi?</th>
+            <td>{{ vienads }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 {% endblock %}

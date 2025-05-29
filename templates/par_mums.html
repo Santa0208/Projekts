@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='stils.css') }}"
@@ -15,23 +16,30 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </head>
   <body>
+    <div class="par_mums">
     <h1>Par mums</h1>
-    <p>Esiet sveicināti...</p>
+    <p>
+      Šī mājaslapa ir veidota mācību nolūkos kā daļa no programmēšanas kursa.
+      Tās galvenais mērķis ir iepazīstināt ar HTML, CSS un JavaScript pamatiem,
+      izmantojot vienkāršus piemērus, tostarp klasisko "Hello, World!"
+      programmu.
+    </p>
+    <p>
+      Šeit Tu atradīsi dažādus interaktīvus elementus — kalkulatoru, konvertoru,
+      attēlus, tabulas un pat zīmēšanas rīkus ar HTML5 canvas. Viss saturs ir
+      izstrādāts, lai palīdzētu izprast tīmekļa lapu uzbūvi un tīmekļa
+      tehnoloģiju darbību.
+    </p>
+    <p>
+      Šī lapa ir daļa no mācību procesa, un tās saturs var tikt papildināts un
+      uzlabots atbilstoši mācību vajadzībām.
+    </p>
     <div class="profile">
       <img
-        src="https://cdn.glitch.global/83edb286-2a81-4e4a-9075-0d4d4dad00f0/wallaper.jpg?v=1744527173855"
+        src="https://cdn.glitch.global/83edb286-2a81-4e4a-9075-0d4d4dad00f0/images.png?v=1748370711688"
         width="50%"
       />
     </div>
-    <br /><br />
-    <div class="login">
-      <form>
-        <label for="vārds">Vārds</label>
-        <input cass="text" type="text" id="vards" name="vards" /><br /><br />
-        <label for="email">e-pasts</label>
-        <input type="email" id="email" name="email" /><br /><br />
-        <input class="submit_button" type="submit" value="Aiziet" /><br /><br />
-      </form>
     </div>
     <a href="index.html">Ej uz sākumu</a><br /><br />
     <a href="/">Atpakaļ</a>

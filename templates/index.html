@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Mans pirmais HTML dokuments</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/83edb286-2a81-4e4a-9075-0d4d4dad00f0/favicon.ico?v=1748422354942">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,24 +30,25 @@
   </head>
   <body>
     <header>
-      <nav class="topnav">
-        <a href="/" class="active">Sākums</a>
-        <a href="par_mums" onclick="atjaunotIetvaru(this); return false;"
-          >Par mums</a
-        >
-        <a href="kontakti" onclick="atjaunotIetvaru(this); return false;"
-          >Kontakti</a
-        >
-        <a href="aptauja" onclick="atjaunotIetvaru(this); return false;"
-          >Aptaujas</a
-        >
-        <a href="pamati_sintakse" onclick="atjaunotIetvaru(this); return false;"
-          >Pamati sintakse</a
-        >
-        <a href="patstavigie_darbi" onclick="atjaunotIetvaru(this); return false;"
-          >Patstāvīgie darbi</a
-        >
-      </nav>
+      <div>
+        <nav class="topnav">
+          <a href="/" class="active">Sākums</a>
+          <a href="par_mums" onclick="atjaunotIetvaru(this); return false;"
+            >Par mums</a
+          >
+          <a href="kontakti" onclick="atjaunotIetvaru(this); return false;"
+            >Kontakti</a
+          >
+          <a href="aptauja" onclick="atjaunotIetvaru(this); return false;"
+            >Aptaujas</a
+          >
+          <a
+            href="pamati_sintakse"
+            onclick="atjaunotIetvaru(this); return false;"
+            >Pamati sintakse</a
+          >
+        </nav>
+      </div>
     </header>
     <aside class="sidebar">
       <a href="#saturs">Saturs</a>
@@ -118,7 +120,7 @@
         ><br /><br />
         <p id="rezultats">Šeit būs rezultāts</p>
       </section>
-      <br><br>
+      <br /><br />
       <section id="konvertors">
         <h2>Konvertors</h2>
         <br />
@@ -152,9 +154,7 @@
         </div>
       </div>
       <section id="tabula">
-        <h2>
-          Tabula
-        </h2>
+        <h2>Tabula</h2>
         <table border="1">
           <tr>
             <th>Pirmais</th>

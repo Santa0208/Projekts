@@ -1,8 +1,12 @@
 {% extends "pamati_sintakse.html" %}
 
 {% block content %}
-<h1>Failu apstrāde!</h1>
-<pre>
-faila piemers.txt saturs = {{ saturs }}
-</pre>
+<div class="container my-5">
+  <h1 class="mb-4">Failu apstrāde!</h1>
+  <div class="card">
+    <div class="card-body bg-light">
+      <pre>{{ saturs }}</pre>
+    </div>
+  </div>
+</div>
 {% endblock %}

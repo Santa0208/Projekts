@@ -3,33 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kontakti</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='stils.css') }}" />
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stils.css') }}"
+    />
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </head>
   <body>
-    <h1>Pamati sintakse</h1>
-    <nav>
-    <ul>
-      <li><a href="/sveiciens">Sveika pasaule</a></li>
-      <li><a href="/mainigie">Mainīgie</a></li>
-      <li><a href="/datu_tipi">Datu tipi</a></li>
-      <li><a href="/operatori">Operatori</a></li>
-      <li><a href="/kontroles_strukturas">Kontroles struktūras</a></li>
-      <li><a href="/funkcijas">Funkcijas</a></li>
-      <li><a href="/ievade_izvade">Ievade izvade</a></li>
-      <li><a href="/failu_apstrade">failu apstrāde</a></li>
-      <li><a href="/oop">OOP</a></li>
-      <li><a href="/moduli">Moduļi</a></li>
-      <li><a href="/joks">Joks</a></li>
-      <li><a href="/csv">CSV</a></li>
-      <li><a href="/darbs">Mājas darbs</a></li>
-      </ul>
-    </nav>
-    {% block content %}{% endblock %}
+    <div class="sintakse">
+      <h1>Pamati sintakse</h1>
+      <nav>
+        <ul>
+          <li><a href="/sveiciens">Sveika pasaule</a></li>
+          <li><a href="/mainigie">Mainīgie</a></li>
+          <li><a href="/datu_tipi">Datu tipi</a></li>
+          <li><a href="/operatori">Operatori</a></li>
+          <li><a href="/kontroles_strukturas">Kontroles struktūras</a></li>
+          <li><a href="/funkcijas">Funkcijas</a></li>
+          <li><a href="/ievade_izvade">Ievade izvade</a></li>
+          <li><a href="/failu_apstrade">failu apstrāde</a></li>
+          <li><a href="/oop">OOP</a></li>
+          <li><a href="/moduli">Moduļi</a></li>
+          <li><a href="/joks">Joks</a></li>
+          <li><a href="/csv">CSV</a></li>
+          <li><a href="/darbs">Mājas darbs</a></li>
+        </ul>
+      </nav>
+      {% block content %}{% endblock %}
+    </div>
   </body>
 </html>

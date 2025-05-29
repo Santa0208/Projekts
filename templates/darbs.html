@@ -2,14 +2,14 @@
 <h1>Saskaitīšanas programma</h1>
 
 {% if rezultats is not none %}
-<p>
-  Rezultāts saskaitot {{ sk1 }} un {{ sk2 }} ir <strong>{{ rezultats }}</strong>
+<p class="programma">
+  Rezultāts saskaitot <strong>{{ sk1 }}</strong> un <strong>{{ sk2 }}</strong> ir <strong>{{ rezultats }}</strong>
 </p>
 <a href="{{ url_for('darbs') }}">Atgriezties</a>
 {% else %}
 <form method="POST" action="{{ url_for('darbs') }}">
-  <input type="number" name="sk1" placeholder="Pirmais skaitlis" required />
-  <input type="number" name="sk2" placeholder="Otrais skaitlis" required />
-  <input type="submit" value="Saskaitīt" />
+  <input type="number" name="sk1" placeholder="Pirmais skaitlis" required /><br><br>
+  <input type="number" name="sk2" placeholder="Otrais skaitlis" required /><br><br>
+  <input type="submit" class="btn btn-warning" value="Saskaitīt" />
 </form>
 {% endif %} {% endblock %}

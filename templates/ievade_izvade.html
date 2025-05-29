@@ -1,16 +1,13 @@
-{% extends "pamati_sintakse.html" %}
-
-{% block content %}
+{% extends "pamati_sintakse.html" %} {% block content %}
 <h1>Ievade un izvade</h1>
 {% if vards %}
-<p>
-  Tu ievadīji {{vards}}
-</p>
+<p>Tu ievadīji {{vards}}</p>
 <a href="/ievade_izvade">Atgriezties</a>
 {% else %}
+
 <form method="POST">
-  <input type="text" name="vards" placeholder="Ievadi vārdu!">
-  <input type="submit" value="Iesniegt!">
+  <input type="text" name="vards" placeholder="Ievadi vārdu!" /><br><br>
+  <input type="submit" class="btn btn-warning" value="Iesniegt!" />
 </form>
-{% endif %}
-{% endblock %}
+
+{% endif %} {% endblock %}

@@ -1,10 +1,17 @@
-{% extends "pamati_sintakse.html" %}
-
-{% block content %}
-<h1>Čaka Norisa joki</h1>
-<pre>
-<img src="{{ avatars }}">
-joks = {{ joks }}
-Joka adrese ir: <a href="{{ adrese }}">Joka adrese ir  šeit</a> 
-</pre>
+{% extends "pamati_sintakse.html" %} {% block content %}
+<div class="container my-5">
+  <h1 class="mb-4">Čaka Norisa joki</h1>
+  
+  <div class="mb-3 text-center">
+    <img src="{{ avatars }}" alt="Avatar" class="img-fluid rounded" style="max-height: 150px;">
+  </div>
+  
+  <div class="card p-3 bg-light">
+    <p><strong>Joks:</strong> {{ joks }}</p>
+    <p>
+      Joka adrese ir:
+      <a href="{{ adrese }}" target="_blank" rel="noopener noreferrer">šeit</a>
+    </p>
+  </div>
+</div>
 {% endblock %}

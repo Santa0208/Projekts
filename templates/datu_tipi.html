@@ -1,13 +1,41 @@
 {% extends "pamati_sintakse.html" %}
 
 {% block content %}
-<h1>Datu tipi</h1>
-<pre>
-teksts = {{teksts}}
-skaitlis = {{skaitlis}}
-decimals = {{decimals}}
-saraksts = {{saraksts}}
-mans dict = {{mans_dict}}
-mans kopa = {{mans_kopa}}
-</pre>
+<div class="container my-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-warning text-black text-center">
+      <h1 class="h4 mb-0">Datu tipi</h1>
+    </div>
+    <div class="card-body">
+      <table class="table table-bordered table-hover">
+        <tbody>
+          <tr>
+            <th>Teksts</th>
+            <td>{{ teksts }}</td>
+          </tr>
+          <tr>
+            <th>Vesels skaitlis</th>
+            <td>{{ skaitlis }}</td>
+          </tr>
+          <tr>
+            <th>Decimālskaitlis</th>
+            <td>{{ decimals }}</td>
+          </tr>
+          <tr>
+            <th>Saraksts</th>
+            <td>{{ saraksts }}</td>
+          </tr>
+          <tr>
+            <th>Mans_dict</th>
+            <td>{{ mans_dict }}</td>
+          </tr>
+          <tr>
+            <th>Mans_kopa</th>
+            <td>{{ mans_kopa }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 {% endblock %}

@@ -11,7 +11,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--<link
+    <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
@@ -20,7 +20,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patua+One&display=swap"
       rel="stylesheet"
-    /> -->
+    />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='stils.css') }}"
@@ -28,15 +28,17 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </head>
   <body>
-    <h1>Administrācijas panelis</h1>
-    <form action="{{ url_for('pieteikties') }}" method="POST">
-      <label for="lietotajvards">Lietotājvārds</label>
-      <input type="text" id="lietotajvards" name="lietotajvards" required>
-      <br><br>
-      <label for="parole">Parole</label>
-      <input type="password" id="parole" name="parole" required>
-      <br><br>
-      <button type="submit">Pieteikties</button>
-    </form>
+    <div class="admin">
+      <h1>Administrācijas panelis</h1>
+      <form action="{{ url_for('pieteikties') }}" method="POST">
+        <label for="lietotajvards">Lietotājvārds</label>
+        <input type="text" id="lietotajvards" name="lietotajvards" required />
+        <br /><br />
+        <label for="parole">Parole</label>
+        <input type="password" id="parole" name="parole" required />
+        <br /><br />
+        <button type="submit" class="btn btn-warning">Pieteikties</button>
+      </form>
+    </div>
   </body>
 </html>
